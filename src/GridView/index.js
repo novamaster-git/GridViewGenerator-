@@ -26,9 +26,10 @@ const GridView = () => {
                     alignItems: 'center',
                     flexWrap: 'wrap',
                 }}>
-                {data.map(() => {
+                {data.map((item) => {
                     return (
                         <TouchableOpacity
+                            key={item}
                             onPress={() => increaseItems()}
                             style={{
                                 backgroundColor: 'green',
